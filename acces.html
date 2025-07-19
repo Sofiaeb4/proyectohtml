@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Página de Access</title>
+  <style>
+    body {
+      background-image: url('fondo3.avif');
+      background-size: cover;
+      background-attachment: fixed;
+      font-family: 'Segoe UI', sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 30px;
+    }
+
+    h1 {
+      color: #4B0082;
+      font-size: 50px;
+      text-align: center;
+      margin-bottom: 10px;
+      text-shadow: 1px 1px 2px #00000050;
+    }
+
+    sub {
+      display: block;
+      font-size: 24px;
+      font-weight: bold;
+      margin: 40px 0 15px;
+      color: #222;
+      border-left: 5px solid #4B0082;
+      padding-left: 10px;
+    }
+
+    .acces1-contenido,
+    .comandos-contenido {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    .acces1-contenido img,
+    .comandos-contenido img {
+      width: 220px;
+      height: auto;
+      border-radius: 10px;
+      border: 2px solid #4B0082;
+    }
+
+    p {
+      text-align: justify;
+      font-size: 18px;
+      line-height: 1.6;
+      margin: 10px 0;
+    }
+
+    iframe {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    .video-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .seguir-btn {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 40px;
+    }
+
+    .seguir-btn img {
+      width: 140px;
+      transition: transform 0.3s;
+    }
+
+    .seguir-btn img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <h1><i><b>ACCESS</b></i></h1>
+
+  <sub>¿QUÉ ES ACCESS?</sub>
+  <div class="acces1-contenido">
+    <img src="acces1.png" alt="Imagen de Access">
+    <div>
+      <p>Microsoft Access es un sistema de administración de bases de datos que te ayuda a administrar una gran cantidad de registros. Además, permite crear aplicaciones que utilicen Access como backend.</p>
+      <p>A diferencia de Microsoft Excel, que se utiliza para el análisis de datos y para realizar cálculos mediante fórmulas; Access es más útil para recopilar, clasificar y manipular grandes cantidades de datos.</p>
+      <p>Puedes utilizar Access para crear una base de datos de:
+        <ul>
+          <li>Alumnos que asisten a una escuela</li>
+          <li>Administración de eventos</li>
+          <li>Y más...</li>
+        </ul>
+      </p>
+    </div>
+  </div>
+
+  <sub>MANEJO DE BASE DE DATOS</sub>
+  <div class="video-container">
+    <iframe width="882" height="496" src="https://www.youtube.com/embed/W-C5uFtocKc" title="Cómo crear una base de datos en ACCESS (Fácil y desde cero)" frameborder="0" allowfullscreen></iframe>
+  </div>
+
+  <sub>MANEJO DE CONSULTAS E INFORMES</sub>
+  <div class="video-container">
+    <iframe width="882" height="496" src="https://www.youtube.com/embed/6tkdbLTQZB4" title="Cómo Crear CONSULTAS en ACCESS" frameborder="0" allowfullscreen></iframe>
+  </div>
+
+  <div class="seguir-btn">
+    <a href="html.html">
+      <img src="seguir.png" alt="Botón Seguir">
+    </a>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Física Interactiva</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+    header, footer {
+      background-color: #004080;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+    section {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+      background-color: white;
+      margin-top: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #004080;
+    }
+    .video {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      margin: 20px 0;
+    }
+    .video iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    .extra {
+      background: #e6f2ff;
+      padding: 15px;
+      border-left: 4px solid #004080;
+      border-radius: 8px;
+      margin-top: 15px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
+    img.ilustracion {
+      width: 100%;
+      max-width: 400px;
+      display: block;
+      margin: 10px auto;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Repaso de Física Interactiva</h1>
+</header>
+
+<section>
+  <h2>Movimiento Rectilíneo Uniforme (MRU)</h2>
+  <p>Un cuerpo se mueve a velocidad constante en línea recta. La fórmula es: <strong>d = v × t</strong></p>
+<img src="mru.gif">
+  <div class="extra">
+    <strong>Ejemplo:</strong> Si un coche va a 60 km/h durante 2 horas:<br>
+    <strong>d = 60 × 2 = 120 km</strong>
+  </div>
+
+  <table>
+    <tr>
+      <th>Velocidad (v)</th><th>Tiempo (t)</th><th>Distancia (d)</th>
+    </tr>
+    <tr>
+      <td>30 km/h</td><td>3 h</td><td>90 km</td>
+    </tr>
+    <tr>
+      <td>80 km/h</td><td>1.5 h</td><td>120 km</td>
+    </tr>
+  </table>
+
+  <div class="video">
+    <iframe src="https://www.youtube.com/embed/8GM0w5Lv0ZE" title="MRU Movimiento rectilíneo uniforme conceptos básicos" allowfullscreen></iframe>
+  </div>
+</section>
+
+<section>
+  <h2>Movimiento Rectilíneo Uniformemente Acelerado (MRUA)</h2>
+  <p>El objeto acelera de forma constante. Fórmulas comunes:</p>
+  <ul>
+    <li>v = v₀ + at</li>
+    <li>d = v₀t + ½at²</li>
+  </ul>
+
+  <div class="extra">
+    <strong>Ejemplo:</strong> Si un objeto parte desde el reposo (v₀ = 0), con a = 2 m/s² y t = 5 s:<br>
+    d = 0 + ½ × 2 × 5² = 25 m
+  </div>
+
+  
+
+  <div class="video">
+    <iframe src="https://www.youtube.com/embed/USFdbyGp8w8" title="MRUA Movimiento Rectilíneo Uniformemente Acelerado" allowfullscreen></iframe>
+  </div>
+</section>
+
+<section>
+  <h2>Ley de Ohm</h2>
+  <p>Relaciona el voltaje (V), la corriente (I) y la resistencia (R). Su fórmula es:</p>
+  <h3 style="text-align: center;">V = I × R</h3>
+
+  <div class="extra">
+    <strong>Ejemplo:</strong> Si I = 2 A y R = 5 Ω:<br>
+    V = 2 × 5 = 10 V
+  </div>
+
+ 
+
+  <table>
+    <tr>
+      <th>Corriente (I)</th><th>Resistencia (R)</th><th>Voltaje (V)</th>
+    </tr>
+    <tr>
+      <td>1 A</td><td>10 Ω</td><td>10 V</td>
+    </tr>
+    <tr>
+      <td>0.5 A</td><td>20 Ω</td><td>10 V</td>
+    </tr>
+  </table>
+
+  <div class="video">
+    <iframe src="https://www.youtube.com/embed/Az9YgKQ_UH4" title="LEY DE OHM" allowfullscreen></iframe>
+  </div>
+</section>
+
+<section>
+  <h2>Leyes de Newton</h2>
+  <ul>
+    <li><strong>1ª Ley:</strong> Todo cuerpo en reposo o en movimiento uniforme permanece así si no hay una fuerza neta.</li>
+<img src="11.webp">
+    <li><strong>2ª Ley:</strong> F = m × a</li>
+<img src="22.gif">
+    <li><strong>3ª Ley:</strong> A toda acción le corresponde una reacción igual y contraria.</li>
+<img src="33.gif">
+  </ul>
+
+  <div class="extra">
+    <strong>Ejemplo:</strong> Si una masa de 10 kg tiene una aceleración de 2 m/s²:<br>
+    F = 10 × 2 = 20 N
+  </div>
+
+
+
+  <div class="video">
+    <iframe src="https://www.youtube.com/embed/yjyStvnHWXg" title="Leyes de Newton" allowfullscreen></iframe>
+  </div>
+</section>
+
+<br><br>
+<p align="right">
+<a href="index.html">
+  <img src="inicio.png" style="float: left; width: 150px;">
+</a>
+
+</body>
+</html>

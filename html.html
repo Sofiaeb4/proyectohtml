@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Página de HTML</title>
+    <style>
+        body {
+            background-image: url('fondo3.avif');
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.92);
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            text-align: center;
+            color: #4B0082;
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        sub {
+            display: block;
+            font-size: 22px;
+            font-weight: bold;
+            color: #333;
+            margin: 30px 0 10px 0;
+            border-left: 6px solid #4B0082;
+            padding-left: 12px;
+        }
+
+        .html2-contenido {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .html2-contenido img {
+            width: 240px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .html2-contenido p {
+            flex: 1;
+            text-align: justify;
+            font-size: 17px;
+            line-height: 1.6;
+        }
+
+        iframe {
+            max-width: 100%;
+            border-radius: 12px;
+            margin-top: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+        }
+
+        .inicio-img {
+            width: 130px;
+            transition: transform 0.3s ease;
+            float: left;
+        }
+
+        .inicio-img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            margin-top: 40px;
+            text-align: right;
+        }
+
+        /* Tabla */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 30px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        th, td {
+            border: 1px solid #bbb;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #4B0082;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f3f3f3;
+        }
+
+        caption {
+            caption-side: top;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #4B0082;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1><i>HTML</i></h1>
+
+        <sub>¿QUÉ ES HTML?</sub>
+        <div class="html2-contenido">
+            <img src="html2.webp" alt="HTML imagen">
+            <p>
+                Es el lenguaje con el que se define el contenido de las páginas web. Básicamente se trata de un conjunto de etiquetas que sirven para definir el texto y otros elementos que componen a una página web, como
+                imágenes, listas, vídeos, etc. Para programar y visualizar el diseño de la página se requiere del Bloc de notas y cualquier navegador web.<br><br>
+                <b>Elemento de apertura de un documento HTML:</b> Al comienzo de un documento se coloca la etiqueta <code>&lt;HTML&gt;</code> que indica al navegador que el archivo que está visualizando es un documento que contiene código HTML. Esta etiqueta se complementa con la etiqueta
+                correspondiente de cierre <code>&lt;/HTML&gt;</code> para delimitar la extensión del documento.<br><br>
+                Dentro del espacio definido por estas etiquetas se incluyen las dos partes principales en las que se divide un
+                documento HTML: la cabecera y el cuerpo.<br><br>
+                La cabecera del documento está definida por las etiquetas <code>&lt;HEAD&gt;</code> y <code>&lt;/HEAD&gt;</code> y contiene información útil para el navegador y los buscadores, pero no es visible para el usuario.<br><br>
+                El cuerpo del documento, definido por las etiquetas <code>&lt;BODY&gt;</code> y <code>&lt;/BODY&gt;</code>, contiene los elementos que sí son visibles por el usuario, es decir, lo que muestra la página cuando se navega por ella.
+            </p>
+        </div>
+
+        <sub>ETIQUETAS BÁSICAS EN HTML</sub>
+        <table>
+            <caption>Principales Etiquetas HTML</caption>
+            <thead>
+                <tr>
+                    <th>Etiqueta</th>
+                    <th>Función</th>
+                    <th>Ejemplo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&lt;h1&gt; ... &lt;/h1&gt;</td>
+                    <td>Encabezado principal</td>
+                    <td>&lt;h1&gt;Hola mundo&lt;/h1&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;p&gt; ... &lt;/p&gt;</td>
+                    <td>Párrafo de texto</td>
+                    <td>&lt;p&gt;Este es un párrafo&lt;/p&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;img src="..."&gt;</td>
+                    <td>Insertar imagen</td>
+                    <td>&lt;img src="foto.jpg"&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;a href="..."&gt; ... &lt;/a&gt;</td>
+                    <td>Enlace a otra página</td>
+                    <td>&lt;a href="pagina.html"&gt;Ir&lt;/a&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;table&gt; ... &lt;/table&gt;</td>
+                    <td>Crear una tabla</td>
+                    <td>&lt;table&gt; ... &lt;/table&gt;</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <sub>¿CÓMO CREAR UNA PÁGINA WEB?</sub>
+        <center>
+            <iframe width="882" height="496" src="https://www.youtube.com/embed/esyNu-EtUG8" title="Cómo hacer una página web en HTML" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </center>
+
+        <footer>
+            <a href="index.html">
+                <img src="inicio.png" class="inicio-img" alt="Volver al inicio">
+            </a>
+        </footer>
+    </div>
+
+</body>
+</html>
+

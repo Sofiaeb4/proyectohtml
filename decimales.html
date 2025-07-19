@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Página de Sistema Binario</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #f5f7fa, #c3cfe2);
+      margin: 0;
+      padding: 30px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #003366;
+      font-size: 48px;
+      margin-bottom: 40px;
+      text-shadow: 1px 1px 2px #999;
+    }
+
+    .contenedor {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .caja {
+      background-color: #ffffff;
+      border-left: 10px solid #003366;
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease;
+    }
+
+    .caja:hover {
+      transform: scale(1.02);
+    }
+
+    .caja h2 {
+      color: #003366;
+      margin-top: 0;
+      font-size: 22px;
+    }
+
+    .caja p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #333;
+      text-align: justify;
+    }
+
+    .caja img {
+      display: block;
+      margin: 15px auto;
+      border-radius: 12px;
+      max-width: 100%;
+      height: auto;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    }
+
+    .tabla {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+
+    .tabla th, .tabla td {
+      border: 1px solid #999;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .tabla th {
+      background-color: #003366;
+      color: #fff;
+    }
+
+    iframe {
+      display: block;
+      margin: 0 auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+
+    .calculadora {
+      background-color: #e6f2ff;
+      padding: 20px;
+      border-radius: 16px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .calculadora input, .calculadora button {
+      padding: 10px;
+      margin: 10px 5px;
+      font-size: 16px;
+      border: 1px solid #003366;
+      border-radius: 6px;
+    }
+
+    .calculadora button {
+      background-color: #003366;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .calculadora button:hover {
+      background-color: #002244;
+    }
+
+    .resultado {
+      font-weight: bold;
+      font-size: 18px;
+      color: #333;
+      margin-top: 10px;
+    }
+
+    footer {
+      margin-top: 50px;
+      text-align: right;
+    }
+
+    footer img {
+      width: 140px;
+      transition: transform 0.3s ease;
+    }
+
+    footer img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>SISTEMA BINARIO</h1>
+
+  <div class="contenedor">
+    <!-- Caja 1: ¿Qué es? -->
+    <div class="caja">
+      <h2>¿Qué es?</h2>
+      <p>El sistema binario es un sistema de numeración en el que los números se representan utilizando las cifras 0 y 1, es decir, solo 2 dígitos (bi = dos). Esto es ampliamente utilizado en informática y electrónica.</p>
+      <img src="binario.gif" alt="Binario GIF">
+    </div>
+
+    <!-- Caja 2: Forma de conversión -->
+    <div class="caja">
+      <h2>Forma para hacer la conversión</h2>
+      <img src="bin.png" alt="Forma conversión">
+    </div>
+
+    <!-- Caja 3: Tabla de ejemplos -->
+    <div class="caja">
+      <h2>Ejemplos</h2>
+      <table class="tabla">
+        <tr><th>Decimal</th><th>Binario</th></tr>
+        <tr><td>65</td><td>1000001</td></tr>
+        <tr><td>1567</td><td>11000011111</td></tr>
+        <tr><td>1250</td><td>10011100010</td></tr>
+        <tr><td>114</td><td>1110010</td></tr>
+        <tr><td>19</td><td>10011</td></tr>
+      </table>
+    </div>
+
+    <!-- Caja 4: Video -->
+    <div class="caja">
+      <h2>Video explicativo</h2>
+      <iframe width="300" height="200" src="https://www.youtube.com/embed/IQpDcrMrlsE" allowfullscreen></iframe>
+    </div>
+
+    <!-- Caja 5: Calculadora -->
+    <div class="caja calculadora">
+      <h2>Calculadora Binaria</h2>
+      <input type="number" id="numero" placeholder="Ingresa un número decimal">
+      <button onclick="convertir()">Convertir a Binario</button>
+      <div class="resultado" id="resultado"></div>
+    </div>
+  </div>
+
+  <footer>
+    <a href="porcentaje.html">
+      <img src="seguir.png" alt="Siguiente">
+    </a>
+  </footer>
+
+  <script>
+    function convertir() {
+      const numero = document.getElementById("numero").value;
+      if (numero === "") {
+        document.getElementById("resultado").innerText = "Por favor ingresa un número.";
+        return;
+      }
+      const binario = parseInt(numero, 10).toString(2);
+      document.getElementById("resultado").innerText = "Binario: " + binario;
+    }
+  </script>
+
+</body>
+</html>
+

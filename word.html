@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Página de Word</title>
+  <style>
+    body {
+      background-image: url('fondo3.avif');
+      background-size: cover;
+      background-attachment: fixed;
+      font-family: 'Segoe UI', sans-serif;
+      color: #222;
+      margin: 0;
+      padding: 30px;
+    }
+
+    h1 {
+      color: #4B0082;
+      font-size: 48px;
+      text-align: center;
+      margin-bottom: 40px;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+    }
+
+    sub {
+      display: block;
+      font-size: 24px;
+      font-weight: bold;
+      color: #fff;
+      background: linear-gradient(to right, #6A5ACD, #9370DB);
+      padding: 12px 20px;
+      border-radius: 10px;
+      margin: 40px auto 20px;
+      width: fit-content;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .tarjeta {
+      background-color: rgba(255, 255, 255, 0.95);
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      padding: 25px;
+      margin-bottom: 30px;
+      display: flex;
+      align-items: flex-start;
+      gap: 25px;
+    }
+
+    .tarjeta img {
+      width: 280px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    }
+
+    .tarjeta p {
+      text-align: justify;
+      font-size: 17px;
+      line-height: 1.7;
+      margin: 0;
+      flex: 1;
+    }
+
+    table {
+      width: 90%;
+      margin: 30px auto;
+      border-collapse: collapse;
+      background-color: rgba(255, 255, 255, 0.97);
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    th {
+      background: linear-gradient(to right, #4B0082, #8A2BE2);
+      color: white;
+      padding: 15px;
+      font-size: 18px;
+    }
+
+    td {
+      padding: 12px;
+      text-align: center;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    iframe {
+      display: block;
+      margin: 40px auto;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    }
+
+    a img {
+      width: 130px;
+      transition: transform 0.3s ease;
+    }
+
+    a img:hover {
+      transform: scale(1.1);
+    }
+
+    @media (max-width: 768px) {
+      .tarjeta {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .tarjeta img {
+        width: 200%;
+        height: auto;
+      }
+
+      table {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1><i><b>WORD</b></i></h1>
+
+  <sub>¿QUÉ ES WORD?</sub>
+  <div class="tarjeta">
+    <img src="word.jpg" alt="Imagen Word">
+    <p>
+      Microsoft Word es un programa que sirve para escribir y editar textos en el computador o en el celular. Con él se pueden hacer documentos como cartas, tareas o currículums de forma sencilla. Además, permite agregar imágenes y otros elementos. Es parte del paquete de Office y funciona en varios sistemas como Windows, Mac, celulares y también en su versión en línea. También podemos generar facturas, invitaciones, carnets, también certificados.
+    </p>
+  </div>
+
+  <sub>¿QUÉ SON COMANDOS?</sub>
+  <div class="tarjeta">
+    <img src="comandos.jpg" alt="Imagen Comandos">
+    <p>
+      Lo que es un comando un comando es una instrucción que le das a tu ordenador para que realice una acción específica. Es como si le dieras una orden directa, y el sistema operativo se encarga de ejecutarla. Los comandos son esenciales para interactuar con el sistema operativo, especialmente si estás utilizando una terminal o línea de comandos.
+    </p>
+  </div>
+
+  <table>
+    <tr>
+      <th>EJEMPLOS DE COMANDOS</th>
+    </tr>
+    <tr>
+      <td>DE MAYÚSCULAS Y MINÚSCULAS - Shift + F3</td>
+    </tr>
+    <tr>
+      <td>PARA ABRIR DOCUMENTOS - Ctrl + A</td>
+    </tr>
+    <tr>
+      <td>PARA CENTRAR - Ctrl + T</td>
+    </tr>
+    <tr>
+      <td>PARA AGRANDAR Y ACHICAR LA LETRA - Ctrl + Shift + &lt; &gt;</td>
+    </tr>
+  </table>
+
+  <sub>RESUMEN DE CÓMO UTILIZAR WORD</sub>
+  <iframe width="882" height="496" src="https://www.youtube.com/embed/-4ooZlyprmc" title="WORD PARA PRINCIPIANTES" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<sub> Da click en el boton de abajo (formulario)</sub>
+  <!-- Imagen centrada con hipervínculo al formulario -->
+  <div style="text-align: center; margin-top: 60px;">
+    <a href="formularioword.html">
+      <img src="formulario.jpg" alt="Formulario" style="max-width: 200%; height: 200;">
+    </a>
+  </div>
+
+  <!-- Botón de "seguir" a la derecha -->
+  <div style="text-align: right; margin-top: 20px;">
+    <a href="excel.html">
+      <img src="seguir.png" alt="Seguir">
+    </a>
+  </div>
+
+</body>
+</html>
+
